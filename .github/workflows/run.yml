@@ -31,10 +31,10 @@ jobs:
         ${{secrets.DEPTID}}
         ${{secrets.ADDRESS}}
         ${{secrets.ADDTEXT}}
-        ${{secrets.CODE}}
+
         ${{secrets.STUNUM}}
         ${{secrets.USERNAME}}
-        ${{secrets.PHONENUM}}
+
         ${{secrets.USERID}}
         ${{secrets.EMERGENCY}}
         ${{secrets.EMERGENCYPHONE}}
