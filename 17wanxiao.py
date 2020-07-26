@@ -12,6 +12,7 @@ address = input()
 addtext = input()
 code = ''
 stuNum = input()
+print(stuNum,'*'*20)
 userName = input()
 phoneNum = ''
 userId = input()
