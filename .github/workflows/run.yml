@@ -34,8 +34,6 @@ jobs:
         ${{secrets.STUNUM}}
         ${{secrets.USERNAME}}
         ${{secrets.USERID}}
-        ${{secrets.EMERGENCY}}
-        ${{secrets.EMERGENCYPHONE}}
         ${{secrets.SCKEY}}
         EOF
         
