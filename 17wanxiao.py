@@ -14,10 +14,8 @@ code = ''
 stuNum = input()
 print(stuNum,'*'*20)
 userName = input()
-phoneNum = ''
+phoneNum = input()
 userId = int(input())
-emergency = input()
-emergencyPhone = input()
 sckey = input()
 
 
@@ -28,28 +26,17 @@ areaStr = json.dumps(area, ensure_ascii=False)
 jsons = {"businessType": "epmpics", "method": "submitUpInfo",
         "jsonData": {"deptStr": {"deptid": deptId, "text": text},
                      "areaStr": areaStr,
-                     "reportdate": round(time.time()*1000), "customerid": "786", "deptid": deptId, "source": "alipay",
+                     "reportdate": round(time.time()*1000), "customerid": "1391", "deptid": deptId, "source": "alipay",
                      "templateid": "pneumonia", "stuNo": stuNum, "username": userName, "phonenum": phoneNum,
-                     "userid": userId, "updatainfo": [{"propertyname": "temperature", "value": "36.4"},
-                                                        {"propertyname": "symptom", "value": "无症状"},
-                                                        {"propertyname": "isConfirmed", "value": "  否"},
-                                                        {"propertyname": "isdefinde", "value": "否.未隔离"},
-                                                        {"propertyname": "isGoWarningAdress", "value": "否"},
-                                                        {"propertyname": "isTouch", "value": "否"},
-                                                        {"propertyname": "isTransitArea", "value": "否"},
-                                                        {"propertyname": "isTransitProvince", "value": "否"},
-                                                        {"propertyname": "isFFHasSymptom", "value": "没有"},
-                                                        {"propertyname": "isContactFriendIn14", "value": "没有"},
-                                                        {"propertyname": "xinqing", "value": "健康"},
-                                                        {"propertyname": "bodyzk", "value": "是"},
-                                                        {"propertyname": "cxjh", "value": "否"},
-                                                        {"propertyname": "isleaveaddress", "value": "否"},
-                                                        {"propertyname": "gtjz0511", "value": "否"},
-                                                        {"propertyname": "medicalObservation", "value": "绿色"},
-                                                        {"propertyname": "ownPhone", "value": phoneNum},
-                                                        {"propertyname": "emergencyContact", "value": emergency},
-                                                        {"propertyname": "mergencyPeoplePhone",
-                                                         "value": emergencyPhone}], "gpsType": 0}}
+                     "userid": userId, "updatainfo": [{"propertyname": "langtineadress", "value": "湖南省郴州市永兴县"},
+                                                       {"propertyname": "isAlreadyInSchool", "value": "B、否"},
+                                                       {"propertyname": "temperature", "value": "36.5"},
+                                                       {"propertyname": "symptom", "value": "A、无症状"},
+                                                       {"propertyname": "bodyzk", "value": "A、身体健康，无异常"},
+                                                       {"propertyname": "ownbodyzk", "value": "A、身体健康，无异常"},
+                                                       {"propertyname": "istouchcb",
+                                                        "value": "G、无高危出行或聚会等行为，居家感染可能性极小"},
+                                                       {"propertyname": "assistRemark", "value": ""}], "gpsType": 1}}
 
 response = requests.post(check_url, json=jsons)
 res = json.dumps(response.json(), sort_keys=True, indent=4, ensure_ascii=False)
