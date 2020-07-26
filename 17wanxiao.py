@@ -15,7 +15,7 @@ stuNum = input()
 print(stuNum,'*'*20)
 userName = input()
 phoneNum = ''
-userId = input()
+userId = int(input())
 emergency = input()
 emergencyPhone = input()
 sckey = input()
