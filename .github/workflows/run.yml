@@ -31,10 +31,8 @@ jobs:
         ${{secrets.DEPTID}}
         ${{secrets.ADDRESS}}
         ${{secrets.ADDTEXT}}
-
         ${{secrets.STUNUM}}
         ${{secrets.USERNAME}}
-
         ${{secrets.USERID}}
         ${{secrets.EMERGENCY}}
         ${{secrets.EMERGENCYPHONE}}
