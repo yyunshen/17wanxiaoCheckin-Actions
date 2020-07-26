@@ -33,6 +33,7 @@ jobs:
         ${{secrets.ADDTEXT}}
         ${{secrets.STUNUM}}
         ${{secrets.USERNAME}}
+        ${{secrets.PHONENUM}}
         ${{secrets.USERID}}
         ${{secrets.SCKEY}}
         EOF
