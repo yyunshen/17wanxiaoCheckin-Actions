@@ -39,7 +39,10 @@ jsons = {"businessType": "epmpics", "method": "submitUpInfo",
                                                        {"propertyname": "assistRemark", "value": ""}], "gpsType": 1}}
 
 response = requests.post(check_url, json=jsons)
-res = json.dumps(response.json(), sort_keys=True, indent=4, ensure_ascii=False)
+try:
+        res = json.dumps(response.json(), sort_keys=True, indent=4, ensure_ascii=False)
+except:
+        res = response.text
 print(res)
 print(jsons)
 
